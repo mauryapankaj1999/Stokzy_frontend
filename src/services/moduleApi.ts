@@ -3,7 +3,7 @@ import api from "./api";
 
 
 export const getModulesByCourse = async (
-  courseId:string
+  courseId:any
 ) => {
   const res =
     await api.get(

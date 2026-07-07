@@ -2,12 +2,12 @@ import api from "./api";
 
 
 export interface Order {
-    courseId: string
+    courseId: any;
 }
 
 
 // Create Order
-export const createOrder = async ( courseId) => {
+export const createOrder = async ( courseId:any) => {
   const res = await api.post(
     "/orders/create",
     {
@@ -19,8 +19,7 @@ export const createOrder = async ( courseId) => {
 };
 
 // Verify Payment
-export const verifyPayment = async (
-  data
+export const verifyPayment = async (data:any
 ) => {
   const res = await api.post(
     "/orders/verify",
