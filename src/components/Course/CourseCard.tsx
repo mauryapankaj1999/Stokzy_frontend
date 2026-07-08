@@ -19,7 +19,7 @@ export default function CourseCard({ courses }: any) {
               <div className="relative h-40 overflow-hidden">
                 <Link href={`/courses/${el.slug}`}>
                   <img
-                    src={`${IMAGE_URL}${el.thumbnail}`}
+                    src={`https://stokzy-backend.onrender.com${el.thumbnail}`}
                     alt={el.thumbnail}
                     className="w-full h-full object-cover transition duration-500 hover:scale-105"
                   />

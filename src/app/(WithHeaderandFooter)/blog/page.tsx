@@ -7,6 +7,8 @@ import React from "react";
 import { useRouter } from "next/navigation";
 export default function Blog() {
   const { data, isLoading } = useBlogs();
+  console.log(process.env.NEXT_PUBLIC_API_URL);
+console.log(IMAGE_URL);
 const router = useRouter();
   console.log(data, "blogdata");
 
@@ -29,7 +31,7 @@ const router = useRouter();
                 <div className="relative overflow-hidden rounded-lg">
                   <Link href={`/blog/${el.slug}`}>
                     <img
-                      src={`${IMAGE_URL}${el.image}`}
+                      src={`https://stokzy-backend.onrender.com${el.image}`}
                       alt={el.title}
                       className="w-full h-[260px] object-cover transition duration-500 group-hover:scale-105"
                     />
