@@ -79,14 +79,6 @@ export default function Footer() {
               <li className="hover:text-[#7ED957] cursor-pointer transition">
                 No-Code Algo Trading
               </li>
-
-              <li className="hover:text-[#7ED957] cursor-pointer transition">
-                Trading Signals
-              </li>
-
-              <li className="hover:text-[#7ED957] cursor-pointer transition">
-                Market Analysis
-              </li>
             </ul>
           </div>
 

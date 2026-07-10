@@ -31,7 +31,7 @@ const router = useRouter();
                 <div className="relative overflow-hidden rounded-lg">
                   <Link href={`/blog/${el.slug}`}>
                     <img
-                      src={`https://stokzy-backend.onrender.com${el.image}`}
+                      src={`${IMAGE_URL}${el.image}`}
                       alt={el.title}
                       className="w-full h-[260px] object-cover transition duration-500 group-hover:scale-105"
                     />

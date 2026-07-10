@@ -31,6 +31,23 @@ export default function Header() {
           />
         </div>
 
+
+
+          <div className="flex-1">
+            <img src="/img/stokzylogowhite.webp" alt="Stokzy Logo" className="w-[100px]" />
+            <div className="">
+              
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
         <ul className="flex items-center">
           {navLinks.map((item) => (
             <li key={item.href}>
