@@ -32,7 +32,7 @@ export default function AlgoTradingSection() {
             <img
               src="/img/Algo.webp"
               alt=""
-              className="w-full h-[100vh] object-cover "
+              className="w-full lg:h-[100vh] h-[50vh] object-cover "
             />
 
             {/* Floating Card */}

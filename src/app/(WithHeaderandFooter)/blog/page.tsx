@@ -20,7 +20,7 @@ const router = useRouter();
     <>
       <Headingagebanner pagename="Blogs" />
 
-      <section className="py-24 bg-[#f8fafc]">
+      <section className="lg:py-24 py-12 bg-[#f8fafc]">
         <div className="section-container">
           {/* Blog Grid */}
           <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-10">
@@ -41,7 +41,7 @@ const router = useRouter();
                 {/* Content */}
                 <div className="mt-6">
                   <Link href={`/blog/${el.slug}`}>
-                    <h3 className="text-lg font-bold leading-tight text-gray-900 transition-colors line-clamp-2">
+                    <h3 className="lg:text-lg text-[16px] font-bold leading-tight text-gray-900 transition-colors line-clamp-2">
                       {el.title}
                     </h3>
                   </Link>
@@ -53,7 +53,7 @@ const router = useRouter();
             </div> */}
 
                  <div
-                      className="prose max-w-none text-gray-600 mt-5 line-clamp-2"
+                      className="prose max-w-none text-gray-600 lg:text-lg text-[13px] mt-2 line-clamp-2"
                       dangerouslySetInnerHTML={{
                         __html: el.description,
                       }}

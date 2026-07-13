@@ -171,19 +171,19 @@ export default function WhyChooseUs() {
   {/* Content */}
   <div className="relative z-10">
 
-    <div className="w-16 h-16 rounded-2xl bg-[#7ED957]/10 text-[#4CAF50] flex items-center justify-center text-2xl mb-8">
+    <div className="lg:w-16 lg:h-16 h-8 w-8 rounded-2xl bg-[#7ED957]/10 text-[#4CAF50] flex items-center justify-center text-2xl mb-8">
       {item.icon}
     </div>
 
-    <h3 className="text-3xl font-bold text-[#4CAF50]">
+    <h3 className="lg:text-3xl text-2xl font-bold text-[#4CAF50]">
       {item.number}
     </h3>
 
-    <h4 className="text-2xl font-semibold text-[#111827] mt-5">
+    <h4 className="lg:text-2xl text-xl font-semibold text-[#111827] lg:mt-5 mt-2">
       {item.title}
     </h4>
 
-    <p className="text-gray-600 mt-4 leading-relaxed">
+    <p className="text-gray-600 lg:mt-4 mt-2 leading-relaxed">
       {item.desc}
     </p>
 

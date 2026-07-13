@@ -29,7 +29,7 @@ export default function Header() {
     <>
       <header className="bg-black sticky top-0 z-50">
         <div className="container mx-auto px-4">
-          <div className="hidden lg:flex items-center justify-between h-[80px]">
+          <div className="hidden lg:flex items-center justify-between ">
             {/* Logo */}
             <Link href="/">
               <Image
@@ -135,7 +135,7 @@ export default function Header() {
               <Link
                 href={item.href}
                 onClick={() => setMenuOpen(false)}
-                className={`block px-6 py-4 border-b border-gray-800 transition ${
+                className={`block px-6 lg:py-4 py-2 border-b border-gray-800 transition ${
                   pathname === item.href
                     ? "text-primary bg-gray-900"
                     : "text-white hover:bg-gray-900"

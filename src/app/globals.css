@@ -338,6 +338,17 @@ body {
  
 }
 
+
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 /* Extra-small phones ke liye thoda aur tight */
 @media (max-width: 380px) {
   .hero-bg_wrap_slide img {
