@@ -49,11 +49,11 @@ export default function TestimonialsMarquee() {
       <div className="container mx-auto px-4">
         {/* Heading */}
         <div className="text-center mb-10">
-          <h2 className="text-4xl font-bold text-center mb-1 ">
+          <h2 className="lg:text-3xl text-2xl font-bold  text-center mb-1 ">
             Trusted by Learners
           </h2>
 
-          <p className="text-gray-400 text-[15px] mt-5 max-w-3xl mx-auto">
+          <p className="text-gray-800 text-[15px] mt-5 lg:max-w-3xl mx-auto">
             Hear from learners and professionals who've experienced Stokzy's
             structured, practical, and industry-focused education.
           </p>
@@ -83,7 +83,7 @@ export default function TestimonialsMarquee() {
 
 function Card({ item }: any) {
   return (
-    <div className="bg-white mb-3 rounded-[24px] shadow-lg p-3 w-[420px] min-h-[250px] flex-shrink-0 border border-gray-100">
+    <div className="bg-white mb-3 rounded-[24px] shadow-lg p-3 lg:w-[420px] w-[250px] lg:min-h-[250px] flex-shrink-0 border border-gray-100">
       {/* Stars */}
       <div className="flex gap-1 text-yellow-400 mb-6">
         {[...Array(5)].map((_, i) => (
@@ -92,7 +92,7 @@ function Card({ item }: any) {
       </div>
 
       {/* Description */}
-      <p className="text-gray-700 leading-2 text-[15px] mb-4">
+      <p className="text-gray-700 leading-2 lg:text-[15px] text-[12px] mb-4">
         "{item.description}"
       </p>
 

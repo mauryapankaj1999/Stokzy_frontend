@@ -10,7 +10,7 @@ export default function TradersSection() {
 
   return (
     <>
-    <section className="relative py-24 bg-[#f8fafc] overflow-hidden">
+    <section className="relative lg:py-24 py-7 bg-[#f8fafc] overflow-hidden">
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#7ED957]/20 blur-[150px]"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#7ED957]/20 blur-[150px]"></div>
       <div className="section-container relative z-10">
@@ -27,7 +27,7 @@ export default function TradersSection() {
 
           {/* Right */}
           <div>
-            <h2 className="text-4xl font-bold  mb-1">
+            <h2 className="lg:text-3xl text-2xl font-bold   mb-1">
               Why Most Traders Lose Money
             </h2>
 
@@ -38,12 +38,12 @@ export default function TradersSection() {
                   className="bg-[#ecfdf5] 
                   border
                   border-[#94e39a]
-                  w-[70%]
+                  lg:w-[70%] w-[100%]
                   rounded-2xl px-6 py-4 inline-flex items-center gap-4 hover:translate-x-2 transition"
                   >
                   <FaCheckCircle className="text-[#57a846] text-xl flex-shrink-0" />
 
-                  <p className="font-medium text-[16px] text-[#222]">{item}</p>
+                  <p className="font-medium lg:text-[16px] text-[13px] text-[#222]">{item}</p>
                 </div>
               ))}
             </div>
@@ -51,7 +51,7 @@ export default function TradersSection() {
         </div>
       </div>
     </section>
-    <section className="relative py-24  overflow-hidden mt-10">
+    <section className="relative lg:py-24 py-7  overflow-hidden lg:mt-10 mt-0">
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#7ED957]/20 blur-[150px]"></div>
       {/* <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#7ED957]/20 blur-[150px]"></div> */}
       <div className="section-container relative z-10">
@@ -62,7 +62,7 @@ export default function TradersSection() {
 
           {/* Right */}
           <div>
-            <h2 className="text-4xl font-bold  mb-1">
+            <h2 className="lg:text-3xl text-2xl font-bold  mb-1">
                 How ai helps you Trade Better
             </h2>
 
@@ -73,12 +73,13 @@ export default function TradersSection() {
                 className="bg-[#ecfdf5] 
                 border
                 border-[#94e39a]
-                w-[70%]
+
+                lg:w-[70%] w-[100%]
                 rounded-2xl px-6 py-4 inline-flex items-center gap-4 hover:translate-x-2 transition"
                 >
                   <FaCheckCircle className="text-[#57a846] text-xl flex-shrink-0" />
 
-                  <p className="font-medium text-[16px] text-[#222]">{item}</p>
+                  <p className="font-medium lg:text-[16px] text-[13px] text-[#222]">{item}</p>
                 </div>
               ))}
             </div>

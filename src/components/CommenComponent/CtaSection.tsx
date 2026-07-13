@@ -7,7 +7,7 @@ export default function TradingCTA() {
 
   return (
     <>
-      <section className="relative overflow-hidden py-32 bg-gradient-to-br from-[#f8fff4] via-white to-[#ecfdf5]">
+      <section className="relative overflow-hidden lg:py-32 py-12 bg-gradient-to-br from-[#f8fff4] via-white to-[#ecfdf5]">
 
         {/* Background Glow */}
         <div className="absolute top-0 left-0 w-96 h-96 bg-[#7ED957]/20 blur-[150px]" />
@@ -21,11 +21,11 @@ export default function TradingCTA() {
 
           <div className="max-w-5xl mx-auto text-center">
 
-            <span className="inline-block px-5 py-2 rounded-full bg-[#7ED957]/10 text-[#4CAF50] font-semibold mb-6">
+            <span className="inline-block px-5 py-2 lg:text-[16px] text-[12px] rounded-full bg-[#7ED957]/10 text-[#4CAF50] font-semibold mb-6">
               🚀 Stokzy Trading Ecosystem
             </span>
 
-            <h2 className="text-5xl lg:text-7xl font-bold leading-tight text-[#111827]">
+            <h2 className="lg:text-3xl text-2xl font-bold  leading-tight text-[#111827]">
               Build Your Trading System
               <br />
               <span className="text-[#4CAF50]">
@@ -33,37 +33,37 @@ export default function TradingCTA() {
               </span>
             </h2>
 
-            <p className="text-gray-600 text-xl mt-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-gray-600 lg:text-xl text-sm lg:mt-8 mt-2 max-w-3xl mx-auto leading-relaxed">
               If you believe trading is about discipline, structure and consistency —
               not shortcuts or hype — Stokzy is built for you.
             </p>
 
             {/* Stats */}
-            <div className="flex flex-wrap justify-center gap-10 mt-12">
+            <div className="flex flex-wrap justify-center lg:gap-10 gap-2 lg:mt-12 mt-2">
 
               <div>
-                <h3 className="text-3xl font-bold text-[#4CAF50]">
+                <h3 className="lg:text-3xl text-lg font-bold text-[#4CAF50]">
                   45,000+
                 </h3>
-                <p className="text-gray-500">
+                <p className="text-gray-500 text-[14px]">
                   Traders Trained
                 </p>
               </div>
 
               <div>
-                <h3 className="text-3xl font-bold text-[#4CAF50]">
+                <h3 className="lg:text-3xl text-lg font-bold text-[#4CAF50] ">
                   24+
                 </h3>
-                <p className="text-gray-500">
+                <p className="text-gray-500 text-[14px]">
                   Cities Covered
                 </p>
               </div>
 
               <div>
-                <h3 className="text-3xl font-bold text-[#4CAF50]">
+                <h3 className="lg:text-3xl text-lg font-bold text-[#4CAF50]">
                   3000+
                 </h3>
-                <p className="text-gray-500">
+                <p className="text-gray-500 text-[14px]">
                   Active Community
                 </p>
               </div>
@@ -75,14 +75,14 @@ export default function TradingCTA() {
 
               <button
                 onClick={() => setOpen(true)}
-                className="px-10 py-5 rounded-full bg-[#4CAF50] text-white text-lg font-semibold hover:scale-105 transition-all duration-300 shadow-xl shadow-[#7ED957]/30"
+                className=" py-3 px-5  rounded-full bg-[#4CAF50] text-white text-lg font-semibold hover:scale-105 transition-all duration-300 shadow-xl shadow-[#7ED957]/30"
               >
                 Start Your Journey →
               </button>
 
             </div>
 
-            <p className="text-gray-500 mt-10 text-lg">
+            <p className="text-gray-500 mt-10 lg:text-xl text-sm">
               Designed for serious traders across equity, options,
               forex and prop firm environments.
             </p>

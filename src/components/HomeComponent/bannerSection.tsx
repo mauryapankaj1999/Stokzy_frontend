@@ -282,16 +282,10 @@ export default function BannerSection() {
         </svg>
       </div>
 
-      {/* Background glow blobs */}
       <div className="absolute top-0 left-0 w-52 h-52 md:w-96 md:h-96 bg-[#7ED957]/20 blur-[100px] md:blur-[150px]"></div>
       <div className="absolute bottom-0 right-0 w-52 h-52 md:w-96 md:h-96 bg-[#7ED957]/20 blur-[100px] md:blur-[150px]"></div>
 
-      {/*
-        Mobile: grid-cols-1 -> content pehle, phir slider (DOM order ke hisaab se)
-        Desktop (md+): grid-cols-2 -> side by side
-      */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-6 relative w-full max-w-7xl items-center">
-        {/* Content block - hamesha pehle aayega (mobile + desktop) */}
         <div className="col-span-1 flex flex-col justify-center text-center md:text-left order-1">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
             Scale your business with <br className="hidden md:block" />{" "}
@@ -324,9 +318,11 @@ export default function BannerSection() {
           </ul>
         </div>
 
-        {/* Slider block - mobile me content ke baad aayega */}
         <div className="col-span-1 order-2 h-[320px] sm:h-[420px] md:h-[500px] lg:h-[600px]">
-          <div className="hero-bg_wrap-cols h-full">
+         <div className="mobile_responsive_hero_bg">
+
+         
+          <div className="hero-bg_wrap-cols  h-full">
             {slideColumns.map((col, colIndex) => (
               <div className="hero-bg_wrap-col" key={colIndex}>
                 {/* Do baar map kiya hai taaki infinite scroll loop seamless dikhe */}
@@ -352,6 +348,11 @@ export default function BannerSection() {
               </div>
             ))}
           </div>
+
+</div>
+
+
+
         </div>
       </div>
     </div>

@@ -20,7 +20,7 @@ export default function BlogPage() {
 
 
 
-            <h2 className="text-4xl font-bold text-center mb-8">
+            <h2 className="lg:text-3xl text-2xl font-bold  text-center mb-8">
               Blog  & Updates
             </h2>
 
@@ -49,7 +49,7 @@ export default function BlogPage() {
               </div>
 
               {/* Content */}
-              <div className="p-8">
+              <div className="p-4 lg:p-8">
 
                 <h3 className="text-[18px] font-bold leading-tight text-[#0F172A] line-clamp-2">
                   {el.title}

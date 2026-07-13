@@ -147,13 +147,13 @@ export default function WhyChooseUs() {
 
         {/* Heading */}
         <div className="text-center max-w-4xl mx-auto mb-10">
-          <h2 className="text-4xl font-bold text-center mb-1">
+          <h2 className="lg:text-4xl text-2xl font-bold text-center mb-1">
             Turn Your Trading Dreams
             {/* <br /> */}
          <span className="text-primary moving-gradient">   Into Reality </span>
           </h2>
 
-          <p className="text-gray-600 mt-3 text-lg max-w-3xl mx-auto">
+          <p className="text-gray-600 mt-3 lg:text-lg text-sm max-w-3xl mx-auto">
             Learn trading with proven strategies, expert mentorship,
             real-time market insights and a thriving trader community.
           </p>

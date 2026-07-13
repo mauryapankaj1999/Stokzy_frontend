@@ -136,9 +136,9 @@ import Courseslider from "../CommenComponent/Courseslider";
 export default function TradeInvest() {
   return(
     <>
-      <div className="labptopsection relative mt-16">
+      <div className="labptopsection relative lg:mt-16 -mt-4">
         {/* <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#7ed95747] blur-[150px]"></div> */}
-        <div className="w-[60%] mx-auto h-full object-contain">
+        <div className="lg:w-[60%] w-[100%] mx-auto h-full object-contain">
           <img src="/img/getprepped.webp" alt="" className="w-full h-full" />
         </div>
       </div>
