@@ -96,7 +96,7 @@ export default function Courses() {
                 setShowSkeleton(false);
               }, 1000);
             }}
-            className={`px-5 py-2 rounded-md whitespace-nowrap cursor-pointer ${
+            className={`lg:px-5 lg:py-2 px-2 py-2 text-[13px] lg:text-[16px] rounded-md whitespace-nowrap cursor-pointer ${
               selectedCategory === ""
                 ? "bg-primary text-white"
                 : "bg-white border"
@@ -116,7 +116,7 @@ export default function Courses() {
                   setShowSkeleton(false);
                 }, 1000);
               }}
-              className={`px-5 py-2 rounded-md whitespace-nowrap cursor-pointer ${
+              className={`lg:px-5 lg:py-2 px-2 py-2 text-[13px] lg:text-[16px] rounded-md whitespace-nowrap cursor-pointer ${
                 selectedCategory === item._id
                   ? "bg-primary text-white"
                   : "bg-white border"

@@ -71,7 +71,7 @@ export default function CourseSection() {
               {/* Image */}
               <div className="overflow-hidden">
                 <img
-                  src={`${IMAGE_URL}${course.thumbnail}`}
+                  src={`${course.thumbnail}`}
                   alt={course.title}
                   className="w-full lg:h-[170px] h-[120px] object-cover transition duration-700 group-hover:scale-110"
                 />

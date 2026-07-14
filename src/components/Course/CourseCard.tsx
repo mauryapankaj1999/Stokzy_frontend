@@ -19,7 +19,7 @@ export default function CourseCard({ courses }: any) {
               <div className="relative overflow-hidden">
                 <Link href={`/courses/${el.slug}`}>
                   <img
-                    src={`${IMAGE_URL}${el.thumbnail}`}
+                    src={`${el.thumbnail}`}
                     alt={el.thumbnail}
                     className="w-full lg:h-[170px] h-[120px] object-cover transition duration-700 group-hover:scale-110"
                   />
