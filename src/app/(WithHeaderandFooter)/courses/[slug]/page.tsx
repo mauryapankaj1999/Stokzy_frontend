@@ -416,7 +416,7 @@ export default function CourseDetails() {
             />
 
             {/* Course Content */}
-            <div className="mb-10">
+            {/* <div className="mb-10">
               <h2 className="text-2xl lg:text-3xl font-bold mb-3">
                 Course Content
               </h2>
@@ -426,7 +426,7 @@ export default function CourseDetails() {
                 course.
               </p>
 
-              <div className="space-y-5">
+               <div className="space-y-5">
                 {courseModules1.map((module, index) => (
                   <div
                     key={module.id}
@@ -469,8 +469,8 @@ export default function CourseDetails() {
                     )}
                   </div>
                 ))}
-              </div>
-            </div>
+              </div> 
+            </div> */}
           </div>
 
           {/* Right Side */}
@@ -479,7 +479,7 @@ export default function CourseDetails() {
               <div className="bg-[#F7F7F7] rounded-3xl lg:shadow-lg p-3 lg:p-5">
                 {/* Image - normal flow me, mobile pe sabse upar */}
                 <img
-                  src={`${IMAGE_URL}${course.thumbnail}`}
+                  src={`${course.thumbnail}`}
                   alt={course.title}
                   className="w-full rounded-2xl"
                 />
