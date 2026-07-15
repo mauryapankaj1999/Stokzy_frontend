@@ -18,7 +18,7 @@ if (!blog) {
     <section className="py-10">
       <div className="section-container max-w-4xl">
         <img
-          src={`${IMAGE_URL}${blog.image}`}
+          src={`${blog.image}`}
           alt={blog.title}
           className="w-full rounded-2xl h-[80vh] object-cover mb-5"
         />
