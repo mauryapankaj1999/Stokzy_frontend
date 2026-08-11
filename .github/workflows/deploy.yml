@@ -1,0 +1,25 @@
+name: Deploy stokzy-web-frontend
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy over SSH
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            set -e
+            cd /home/ubuntu/stokzy-web-frontend
+            git fetch origin main
+            git reset --hard origin/main
+            npm ci
+            npm run build
+            pm2 restart stokzy-web-frontend
