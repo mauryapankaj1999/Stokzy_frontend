@@ -2,7 +2,7 @@ import axios from "axios";
 
 const api = axios.create({
   // baseURL: "http://localhost:5000/api",
-  baseURL: "https://stokzy-backend.onrender.com/api",
+  baseURL: "https://api.stokzy.com/api",
 });
 
 api.interceptors.request.use(
