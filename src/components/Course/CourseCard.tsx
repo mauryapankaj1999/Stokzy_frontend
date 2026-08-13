@@ -46,10 +46,10 @@ export default function CourseCard({ courses }: any) {
                 </div>
                 <div className="flex gap-2 text-gray-500 text-[12px] my-2">
                   <span className="line-through lg:text-[15px] text-[13px]">
-                    ₹ {el?.discountPrice}
+                    ₹ {el?.price}
                   </span>
                   <span className="flex items-center text-black lg:text-[18px] text-[15px] font-semibold">
-                    ₹{el?.price}
+                    ₹{el?.discountPrice}
                   </span>
                 </div>
                 {/* <div className="flex gap-3"> */}
