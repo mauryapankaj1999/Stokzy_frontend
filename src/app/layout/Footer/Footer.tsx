@@ -31,18 +31,18 @@ export default function Footer() {
         }}
       /> */}
 
-      {/* Dark Overlay */}
+      
       <div className="absolute inset-0 bg-black/80 z-0" />
 
-      {/* Green Glow */}
+     
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[900px] h-[300px] bg-[#7ED957]/10 blur-[120px] rounded-full z-0" />
 
-      {/* Content */}
+      
       <div className="section-container py-20 relative z-10">
 
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-12">
 
-          {/* Logo Section */}
+         
           <div>
             <img
               src="/img/stokzylogowhite.webp"
@@ -56,33 +56,41 @@ export default function Footer() {
             </p>
 
             <div className="flex gap-5 mt-8">
-              <FaXTwitter className="text-2xl cursor-pointer hover:text-[#7ED957] transition" />
-              <FaInstagram className="text-2xl cursor-pointer hover:text-[#7ED957] transition" />
-              <FaLinkedinIn className="text-2xl cursor-pointer hover:text-[#7ED957] transition" />
-              <FaYoutube className="text-2xl cursor-pointer hover:text-[#7ED957] transition" />
+              <a href="" target="_blank" rel="noopener noreferrer">
+                <FaXTwitter className="text-2xl cursor-pointer hover:text-primary transition" />
+              </a>
+              <a href="https://www.instagram.com/stokzy_official?igsi=ODhtZWkwemlsbWJ2&utm_source=qr" target="_blank" rel="noopener noreferrer">
+              <FaInstagram className="text-2xl cursor-pointer hover:text-primary transition" />
+              </a>
+              <a href="" target="_blank" rel="noopener noreferrer">
+              <FaLinkedinIn className="text-2xl cursor-pointer hover:text-primary transition" />
+              </a>
+              <a href="https://www.youtube.com/@Stokzy_bx" target="_blank" rel="noopener noreferrer">
+              <FaYoutube className="text-2xl cursor-pointer hover:text-primary transition" />
+              </a>
             </div>
           </div>
 
-          {/* Products */}
+        
           <div>
             <h3 className="font-semibold text-xl mb-6 text-white">
               Products
             </h3>
 
             <ul className="space-y-4 text-gray-400">
-              <li className="hover:text-[#7ED957] cursor-pointer transition">
-                <Link href="/Copytrading">
+              <li className="hover:text-primary cursor-pointer transition">
+                <Link href="/copytrading">
                 Copy Trading
                 </Link>
               </li>
 
-              <li className="hover:text-[#7ED957] cursor-pointer transition">
+              <li className="hover:text-primary cursor-pointer transition">
                 No-Code Algo Trading
               </li>
             </ul>
           </div>
 
-          {/* Company */}
+         
           <div>
             <h3 className="font-semibold text-xl mb-6 text-white">
               Company
@@ -115,7 +123,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Legal */}
+         
           <div>
             <h3 className="font-semibold text-xl mb-6 text-white">
               Legal
@@ -156,7 +164,7 @@ export default function Footer() {
 
         </div>
 
-        {/* Divider */}
+       
         <div className="border-t border-white/10 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
 
           <p className="text-gray-500 text-sm">

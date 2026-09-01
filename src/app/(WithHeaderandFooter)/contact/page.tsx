@@ -111,10 +111,11 @@ const handleSubmit = async (
                   </p>
 
                   <a
-                    href="mailto:marketing@stokzy.com"
+                    href="mailto:info@stokzy.com"
                     className="text-primary font-semibold mt-4 inline-block"
                   >
-                    marketing@stokzy.com
+                    {/* marketing@stokzy.com */}
+                    info@stokzy.com
                   </a>
                 </div>
               </div>

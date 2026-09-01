@@ -238,13 +238,12 @@ export default function About() {
         </div>
       </section>
 
-      <section className="relative lg:py-24 py-8 bg-[#f8fafc] overflow-hidden">
-        {/* Background Glow */}
+      {/* <section className="relative lg:py-24 py-8 bg-[#f8fafc] overflow-hidden">
+        
         <div className="absolute top-0 right-0 w-96 h-96 bg-[#7ED957]/20 blur-[150px]" />
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#7ED957]/20 blur-[150px]" />
 
         <div className="section-container relative z-10">
-          {/* Heading */}
           <div className="text-center">
             <h2 className="lg:text-4xl text-2xl font-bold  mb-1">Founders & Directors</h2>
 
@@ -255,9 +254,7 @@ export default function About() {
             </p>
           </div>
 
-          {/* Cards */}
           <div className="grid lg:grid-cols-2 gap-8 mt-16">
-            {/* Founder */}
             <div className="bg-white rounded-[32px] lg:p-10 p-4 shadow-xl border border-gray-100 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
               <div className="flex justify-center">
                 <img
@@ -289,7 +286,6 @@ export default function About() {
               </p>
             </div>
 
-            {/* Co-Founder */}
             <div className="bg-white rounded-[32px] lg:p-10 p-4 shadow-xl border border-gray-100 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
               <div className="flex justify-center">
                 <img
@@ -322,9 +318,8 @@ export default function About() {
             </div>
           </div>
         </div>
-      </section>
-      <section className="relative py-12 bg-[#f8fafc] overflow-hidden">
-        {/* Glow */}
+      </section> */}
+      {/* <section className="relative py-12 bg-[#f8fafc] overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-[#7ED957]/20 blur-[150px]" />
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#7ED957]/20 blur-[150px]" />
 
@@ -368,15 +363,7 @@ export default function About() {
                         src={item.image}
                         alt={item.name}
                         fill
-                        // className="object-cover"
-                        // width={180}
-                        // height={10}
-                        // fill
                   className="lg:w-52 lg:h-52  w-36 h-36 rounded-full object-cover border-4 border-[#7ED957]/20"
-
-                        // className="rounded-full border-4 border-[#7ED957]/20  w-[180px] h-[180px] object-cover"
-                    
-                    
                     />
                     </div>
                   </div>
@@ -399,7 +386,7 @@ export default function About() {
             ))}
           </Swiper>
         </div>
-      </section>
+      </section> */}
 
       <section className="relative py-12 bg-[#f8fafc] overflow-hidden">
         {/* Glow Effects */}

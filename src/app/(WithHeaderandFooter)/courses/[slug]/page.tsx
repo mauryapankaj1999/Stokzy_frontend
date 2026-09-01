@@ -114,17 +114,21 @@ export default function CourseDetails() {
       </div>
     );
   }
+const originalPrice = Number(course.price) || 0;
+const discountedPrice = Number(course.discountPrice) || 0;
 
-  const hasDiscount =
-    Number(course.discountPrice) > Number(course.price) &&
-    Number(course.discountPrice) > 0;
-  const discountPercentage = hasDiscount
-    ? Math.round(
-        ((Number(course.discountPrice) - Number(course.price)) /
-          Number(course.discountPrice)) *
-          100,
-      )
-    : 0;
+const hasDiscount =
+  discountedPrice > 0 && discountedPrice < originalPrice;
+
+const finalPrice = hasDiscount
+  ? discountedPrice
+  : originalPrice;
+
+const discountPercentage = hasDiscount
+  ? Math.round(
+      ((originalPrice - discountedPrice) / originalPrice) * 100
+    )
+  : 0;
 
   const curriculum = parseCurriculum(course.description);
 
@@ -340,21 +344,25 @@ export default function CourseDetails() {
                 </div>
 
                 <div className="p-5 lg:p-6">
-                  <div className="flex items-end gap-2 flex-wrap">
-                    <span className="text-2xl lg:text-3xl font-bold text-gray-900">
-                      ₹{Number(course.price).toLocaleString("en-IN")}
-                    </span>
-                    {hasDiscount && (
-                      <>
-                        <span className="text-sm text-gray-400 line-through">
-                          ₹{Number(course.discountPrice).toLocaleString("en-IN")}
-                        </span>
-                        <span className="bg-primary/10 text-primary px-2.5 py-1 rounded-full text-[11px] font-semibold">
-                          {discountPercentage}% off
-                        </span>
-                      </>
-                    )}
-                  </div>
+               <div className="flex items-end gap-2 flex-wrap">
+  {/* Discounted / Final Price */}
+  <span className="text-2xl lg:text-3xl font-bold text-gray-900">
+    ₹{finalPrice.toLocaleString("en-IN")}
+  </span>
+
+  {/* Original Price */}
+  {hasDiscount && (
+    <>
+      <span className="text-sm text-gray-400 line-through">
+        ₹{originalPrice.toLocaleString("en-IN")}
+      </span>
+
+      <span className="bg-primary/10 text-primary px-2.5 py-1 rounded-full text-[11px] font-semibold">
+        {discountPercentage}% OFF
+      </span>
+    </>
+  )}
+</div>
 
                   <p className="text-gray-400 text-xs mt-1">
                     One-time payment · lifetime access
