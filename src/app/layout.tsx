@@ -6,6 +6,7 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import { AuthProvider } from "@/context/AuthContext";
 import ToastProvider from "@/providers/ToastProvider";
 import Script from "next/script";
+import icon from "../../src/app/icon.png";
 
 // const inter = Inter({ subsets: ["latin"] });
 
