@@ -85,6 +85,10 @@ export default function Courses() {
       
       */}
 
+
+
+      {/* asdjflkasdfkljadskfdsfasdf sdf asdf */}
+
       <div className="lg:mb-6 mb-1 overflow-x-auto scrollbar-hide">
         <div className="flex w-max lg:w-full lg:flex-wrap justify-start lg:justify-center gap-3 px-1">
           <div
