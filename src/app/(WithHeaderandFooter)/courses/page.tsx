@@ -103,6 +103,9 @@ export default function Courses() {
             }`}
           >
             All
+
+{/* asdfasdf */}
+
           </div>
 
           {categories?.data?.map((item: any) => (
