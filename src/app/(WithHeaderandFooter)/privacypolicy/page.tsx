@@ -238,7 +238,7 @@ export default function PrivacyPolicy() {
 
               <div>
                 <h2 className="text-2xl font-bold mb-4">
-                  14. Policy Updates
+                  13. Policy Updates
                 </h2>
 
                 <p className="text-slate-600 leading-8">
