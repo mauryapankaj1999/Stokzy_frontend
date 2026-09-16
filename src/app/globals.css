@@ -209,9 +209,6 @@ body {
   padding-right: 1rem;
 }
 
-/* ============================================
-   DESKTOP (default) — jaisa pehle tha, waisa hi
-   ============================================ */
 .hero-bg_wrap-cols {
   grid-column-gap: 12px;
   grid-row-gap: 12px;
@@ -583,3 +580,4 @@ font-weight: 900;
 .text-muted-foreground {
   color: #71717a;
 }
+

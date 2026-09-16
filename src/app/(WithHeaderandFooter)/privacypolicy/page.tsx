@@ -211,7 +211,7 @@ export default function PrivacyPolicy() {
                 </p>
               </div>
 
-              <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8">
+              {/* <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8">
                 <h2 className="text-2xl font-bold mb-4">
                   13. Grievance Redressal
                 </h2>
@@ -234,7 +234,7 @@ export default function PrivacyPolicy() {
                     working days
                   </p>
                 </div>
-              </div>
+              </div> */}
 
               <div>
                 <h2 className="text-2xl font-bold mb-4">
