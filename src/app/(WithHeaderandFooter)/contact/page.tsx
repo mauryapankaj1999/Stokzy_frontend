@@ -83,7 +83,7 @@ const handleSubmit = async (
                     </p>
 
                     <p className="font-medium">
-                      📞 +91 &nbsp; 9910752960
+                      📞 +91 &nbsp; 7303570034
                     </p>
                   </div>
                 </div>
